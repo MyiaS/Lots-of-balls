@@ -1,8 +1,8 @@
-//declx[1]re vx[1]rix[1]bles
-//flox[1]t [] x;
-//flox[1]t x, y, velX, velY, dix[1]m,x[1] ,b, velx[1], velB ;
+//declare variables
+//float [] x;
+//float x, y, velX, velY, diam,x[1] ,b, velx[1], velB ;
 
-//declx[1]re x[1]rrx[1]ys
+//declare arrays
 float [] x = new float [2];
 float [] y = new float [2];
 float [] velX = new float [2];
@@ -13,31 +13,42 @@ float [] diam = new float [2];
 
 //int[numbers];
 //color[] c;
-//flox[1]t[] n;
+//float[] n;
 
-//initix[1]lize x[1]rrx[1]ys
+//initialize arrays
 //numbers = new int [10];
 //c = new color [5];
 //n = {35.6, 41.7, 2.0001};
 
-//decx[1]lring x[1]nd initix[1]lizing x[1]rrx[1]ys
+//declaring and initializing arrays
  //int[] numbers = new int [20];
  
 
 void setup() {
-  //set size of cx[1]nvx[1]s
+  //set size of canvas
   size(800, 600);
+int i=0;
 
-  //initix[1]lize vx[1]rix[1]bles
-  x[0] = width/2;
-  y[0] = height/2;
-  diam[0] = 80;
-  velX[0] = random(-5, 5);
-  velY[0] = random(-5, 5);
-  x[1]= width/3;
-  y[1]= height/2;
-  velX[1]= random(-10,10);
-  velY[1] = random(-10,10);
+  //initialize variables
+  while (i<2){
+  x[i]= random(width);
+  y[i]= random(height);
+  velX[i]= random(-5,5);
+  velY[i]= random(-5,5);
+  diam[i]=random(5,100);
+  //i insreases by 1
+  i++; 
+  }
+  
+  //x[0] = width/2;
+  //y[0] = height/2;
+  //diam[0] = 80;
+  //velX[0] = random(-5, 5);
+  //velY[0] = random(-5, 5);
+  //x[1]= width/3;
+  //y[1]= height/2;
+  //velX[1]= random(-10,10);
+  //velY[1] = random(-10,10);
 }
 
 void draw() {
